@@ -1,6 +1,18 @@
+Assignment for Artificial Intelligence (CSCI-UA 472) with Ernest Davis.
+- Programming Assignment 4
 
-Compile file: 
-- javac textClassifier.java
+This is a program that implements the Naive Bayes method to learn a classifer for text from training data, and uses a test data to evaluate the quality of the classifier. 
 
-Run file: 
-- Input format : java textClassifier corpus.txt 5
+How to run program? 
+- Compile file: javac textClassifier.java
+- Run file: java textClassifier corpus.txt 5
+  - First parameter is the file name for the corpus
+  - Second parameter is user input of an integer N (number of entries in the corpus to use as the training set) 
+
+Input: file of short biographies (a couple of sentences taken from Knowledge Graph and Wikipedia) of various people, tagged with a category. 
+- File format: Separate biographies are separated by 1 or more blank lines. In each biography, the first line is the name of the person. The second line is the category (a single word). The remaining lines are the biography. You may assume that the characters in the file are all a-z, A-Z, comma, period, and white space; there are no numbers and no other punctuation.
+- Sample corpus files: corpus1.txt, corpus2.txt 
+
+Output: 
+- For each person in the test set, the probabilities associated with each category; the prediction (the category with the highest probability), and a statement whether this is right or wrong.
+- The overall accuracy of the classifier on the test set.
