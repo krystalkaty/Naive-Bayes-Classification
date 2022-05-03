@@ -1,0 +1,6 @@
+
+Compile file: 
+- javac textClassifier.java
+
+Run file: 
+- Input format : java textClassifier corpus.txt 5
